@@ -12,36 +12,29 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up Python version
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v3
+        with: 
+          dotnet-version: '7.0.x'
 
-      - name: Create and start virtual environment
-        run: |
-          python -m venv venv
-          source venv/bin/activate
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
       
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: dotnet publish
+        run: dotnet publish ./max.portfolio -c Release -o ./max-portfolio.artifact
         
-      # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
-      
-      - name: Upload artifact for deployment jobs
+      - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
-          name: python-app
-          path: |
-            . 
-            !venv/
-
+          name: .max.portfolio-artifact
+          path: ./max.portfolio.artifact
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Production'
@@ -51,13 +44,13 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
-          name: python-app
-          path: .
-          
-      - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v2
+          name: .max.portfolio-artifact
+
+      - name: Deploy to Azure Web App
         id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
         with:
           app-name: 'max-portfolio'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_066A9FFED4874BB0A26B93B1DCC3D3DD }}
+          package: .
