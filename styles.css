@@ -12,8 +12,6 @@ body {
 }
 
 header {
-    background-color: #fff;
-    color: black;
     padding: 10px 0;
 }
 
@@ -47,11 +45,6 @@ nav ul li {
     margin: 0 auto;
     padding: 20px;
 }
-
-/* nav ul {
-    list-style-type: none;
-} */
-
 
 section {
     max-width: 1000px;
@@ -90,11 +83,6 @@ section h2, h3 {
     margin-left: 80px;
     margin-bottom: 0;
 }
-
-.a-propos p {
-    text-align: justify;
-}
-
 .portfolio-item img {
     max-width: 100%;
     height: auto;
@@ -102,7 +90,6 @@ section h2, h3 {
 
 footer {
     background-color: white;
-    color:black;
     text-align: center;
     flex-wrap: wrap;
     padding: 10px 0;
