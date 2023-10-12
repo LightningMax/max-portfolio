@@ -21,9 +21,21 @@ footer {
     padding: 20px
 }
 
+a {
+    color: #333;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+    
+
 .menu-nav a {
     text-decoration: none;
     color: black;
+    font-style: normal;
 }
 
 .menu-nav a:hover {
@@ -60,10 +72,20 @@ img {
     margin-bottom: 30px;
 }
 
-.contact {
-    width: 50%;
+img {
+   border-bottom: 0.1px solid;
+   border-right: 0.1px solid;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+li {
     margin: auto;
+    width: 50%;
     list-style-type: none;
+    margin-bottom: 15px;
 }
 
 .portfolio h1 {
