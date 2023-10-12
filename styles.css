@@ -99,6 +99,7 @@ h2, h3 {
 
 .a-propos {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
