@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +9,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-header, footer {
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-header, footer {
+header,
+footer {
     padding: 20px 50px;
 }
 
@@ -59,7 +54,9 @@ section p {
     margin: auto;
 }
 
-section h2, h3, img{
+section h2,
+h3,
+img {
     margin-bottom: 30px;
 }
 
@@ -69,7 +66,7 @@ section h2, h3, img{
     list-style-type: none;
 }
 
-.portfolio h1{
+.portfolio h1 {
     width: 50%;
     margin: auto;
 }
@@ -91,7 +88,8 @@ section h2, h3, img{
     margin-bottom: 20px;
 }
 
-h2, h3 {
+h2,
+h3 {
     display: block;
     display: flex;
     justify-content: center;
