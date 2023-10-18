@@ -14,6 +14,15 @@ footer {
     padding: 20px 50px;
 }
 
+footer a {
+    margin-right: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
 .menu-nav {
     display: flex;
     justify-content: space-between;
@@ -50,13 +59,16 @@ nav a {
 }
 
 section {
-    max-width: 1000px;
     margin: auto;
     padding: 40px 0;
 }
 
-section h2 {
+h1 {
     font-size: 42px;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 section p {
@@ -65,19 +77,10 @@ section p {
     margin: auto;
 }
 
-section h2,
-h3,
-img {
+section h1,
+h2 {
     margin-bottom: 30px;
-}
-
-img {
-   border-bottom: 0.1px solid;
-   border-right: 0.1px solid;
-}
-
-img:hover {
-    opacity: 0.5;
+    text-align: center;
 }
 
 li {
@@ -87,9 +90,20 @@ li {
     margin-bottom: 15px;
 }
 
-.portfolio h1 {
-    width: 50%;
+.portfolio {
+    background-color: #333;
+    color: white;
+    margin-top: 80px;
+}
+
+.test {
+    max-width: 1000px;
     margin: auto;
+}
+
+.portfolio h1 {
+    margin-bottom: 60px;
+    padding: 20px 40px;
 }
 
 .portfolio p {
@@ -97,12 +111,8 @@ li {
     margin: auto;
 }
 
-.portfolio img {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 35px;
+.portfolio a {
+    color: white;
 }
 
 .portfolio-item {
@@ -125,7 +135,7 @@ h3 {
 .btn-grad {
     display: block;
     background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
-    width: 120px;
+    width: 150px;
     margin: 10px;
     padding: 20px 46px;
     text-align: center;
@@ -134,7 +144,7 @@ h3 {
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
-    box-shadow: 0 0 20px #eee;
+    box-shadow: 0 0 5px #eee;
     border-radius: 50px;
   }
 
@@ -152,13 +162,16 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
+.contenu-portfolio {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-footer a {
-    margin-right: 30px;
+.contenu-portfolio > div {
+    width: 50%;
 }
