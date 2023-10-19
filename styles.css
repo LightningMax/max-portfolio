@@ -1,12 +1,11 @@
 * {
     margin: 0;
-    padding: 0;
 }
 
 body {
-    background-color: white;
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 header,
@@ -31,7 +30,6 @@ footer a {
 }
 
 a {
-    color: #333;
     text-decoration: none;
     font-style: italic;
 }
@@ -42,7 +40,7 @@ a:hover {
     
 .menu-nav a {
     text-decoration: none;
-    color: black;
+    color: #000000;
     font-style: normal;
 }
 
@@ -91,8 +89,8 @@ li {
 }
 
 .portfolio {
-    background-color: #333;
-    color: white;
+    background-color: #000000;
+    color: #FFFFFF;
     margin-top: 80px;
 }
 
@@ -106,35 +104,23 @@ li {
     padding: 20px 40px;
 }
 
-.portfolio p {
-    width: 50%;
-    margin: auto;
-}
-
 .portfolio a {
-    color: white;
+    color: #FFFFFF;
 }
 
 .portfolio-item {
     margin-bottom: 20px;
 }
 
-h2,
-h3 {
-    display: block;
-    display: flex;
-    justify-content: center;
-}
-
 .btn {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-} 
+}
 
 .btn-grad {
     display: block;
-    background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
+    background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
     width: 150px;
     margin: 10px;
     padding: 20px 46px;
@@ -143,14 +129,14 @@ h3 {
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 5px #eee;
+    color: #FFFFFF;            
+    box-shadow: 0 0 5px #FFFFFF;
     border-radius: 50px;
   }
 
   .btn-grad:hover {
     background-position: right center;
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
   }
 
@@ -159,9 +145,6 @@ h3 {
 }
 
 .a-propos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 1000px;
     margin: auto;
 }
@@ -169,9 +152,25 @@ h3 {
 .contenu-portfolio {
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 50px;
 }
 
-.contenu-portfolio > div {
-    width: 50%;
+img {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.github {
+    border-radius:  100px;
+}
+
+.icons-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
