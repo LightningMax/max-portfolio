@@ -26,7 +26,7 @@ footer a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px
+    padding: 20px;
 }
 
 a {
@@ -37,7 +37,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-    
+
 .menu-nav a {
     text-decoration: none;
     color: #000000;
@@ -120,7 +120,7 @@ li {
 
 .btn-grad {
     display: block;
-    background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
+    background-image: linear-gradient(to right, #000000 0%, #434343 51%, #000000 100%);
     width: 150px;
     margin: 10px;
     padding: 20px 46px;
@@ -129,16 +129,16 @@ li {
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: #FFFFFF;            
+    color: #FFFFFF;
     box-shadow: 0 0 5px #FFFFFF;
     border-radius: 50px;
-  }
+}
 
-  .btn-grad:hover {
+.btn-grad:hover {
     background-position: right center;
     color: #FFFFFF;
     text-decoration: none;
-  }
+}
 
 .portfolio-item p {
     margin-bottom: 20px;
@@ -166,7 +166,7 @@ img {
 }
 
 .github {
-    border-radius:  100px;
+    border-radius: 100px;
 }
 
 .icons-list {
